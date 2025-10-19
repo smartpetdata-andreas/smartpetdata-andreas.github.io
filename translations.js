@@ -26,7 +26,7 @@ const translations = {
 
         // Final CTA
         ctaHeadline: "Ready to simplify your pet's care?",
-        ctaSubheadline: "Join the SmartPetData waitlist and be the first to experience stress-free, organized, intelligent pet health.",
+        ctaSubheadline: "Join the SmartPetData waitlist and be the first to experience stress-free, organized, intelligent pet health management.",
         ctaButtonLarge: "Join the Waitlist →",
 
         // Footer
