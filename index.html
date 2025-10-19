@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Turn every PDF, note, and visit into a single, searchable health record — so you and your vet are always on the same page.">
+    <title>SmartPetData - Be the pet parent your vet brags about</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="images/logo.svg">
+
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://smartpetdata.com/">
+    <meta property="og:title" content="SmartPetData - Be the pet parent your vet brags about">
+    <meta property="og:description" content="Turn every PDF, note, and visit into a single, searchable health record — so you and your vet are always on the same page.">
+    <meta property="og:image" content="https://smartpetdata.com/images/background.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://smartpetdata.com/">
+    <meta property="twitter:title" content="SmartPetData - Be the pet parent your vet brags about">
+    <meta property="twitter:description" content="Turn every PDF, note, and visit into a single, searchable health record — so you and your vet are always on the same page.">
+    <meta property="twitter:image" content="https://smartpetdata.com/images/background.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Language Toggle -->
+    <div class="language-toggle">
+        <button class="lang-btn active" onclick="setLanguage('en')" data-lang="en">EN</button>
+        <button class="lang-btn" onclick="setLanguage('fr')" data-lang="fr">FR</button>
+    </div>
+    <!-- Hero Section -->
+    <div class="hero">
+        <div class="hero-inner">
+            <!-- Left Side: Image -->
+            <div class="hero-image">
+                <img src="images/background.png" alt="Pet health tracking">
+            </div>
+
+            <!-- Right Side: Content -->
+            <div class="hero-content">
+                <!-- Logo -->
+                <div class="logo-container">
+                    <img src="images/logo.svg" alt="SmartPetData Logo" class="logo">
+                </div>
+
+                <!-- Main Headline -->
+                <h1 class="hero-title" data-translate="heroTitle">
+                    Be the pet parent your vet brags about.
+                </h1>
+
+                <!-- Subheadline -->
+                <p class="hero-subtitle" data-translate="heroSubtitle">
+                    Turn every PDF, note, and visit into a single, searchable health record — so you and your vet are always on the same page.
+                </p>
+
+                <!-- CTA Button (Early placement) -->
+                <div class="cta-section-early">
+                    <a href="https://forms.gle/yNYacXetnbGwsk7k7" target="_blank" rel="noopener noreferrer" class="cta-button" data-translate="ctaButton">
+                        Join the Waitlist
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Why SmartPetData Section -->
+    <section class="why-section">
+        <div class="container-wide">
+            <h2 class="section-title" data-translate="whyTitle">Why SmartPetData</h2>
+
+            <div class="features-list">
+                <!-- Feature 1 -->
+                <div class="feature-showcase">
+                    <div class="feature-text">
+                        <div class="feature-header">
+                            <div class="feature-number">1</div>
+                            <h3 data-translate="feature1Title">All Your Pet's Health Records, Unified</h3>
+                        </div>
+                        <p data-translate="feature1Text">
+                            No more scattered files or forgotten treatments. SmartPetData intelligently extracts and organizes PDFs, logs, and vet notes into a clean, searchable timeline — or simply ask the AI assistant to find what you need in seconds.
+                        </p>
+                    </div>
+                    <div class="feature-carousel">
+                        <div class="carousel-container">
+                            <div class="carousel-track">
+                                <img src="images/screenshot-timeline-1.png" alt="Health records timeline" class="screenshot" loading="lazy">
+                                <img src="images/screenshot-timeline-2.png" alt="Timeline filtering" class="screenshot" loading="lazy">
+                                <img src="images/screenshot-timeline-3.png" alt="Record details" class="screenshot" loading="lazy">
+                                <img src="images/screenshot-timeline-4.png" alt="Timeline view" class="screenshot" loading="lazy">
+                            </div>
+                        </div>
+                        <button class="carousel-btn prev" onclick="moveCarousel(0, -1)" aria-label="Previous">‹</button>
+                        <button class="carousel-btn next" onclick="moveCarousel(0, 1)" aria-label="Next">›</button>
+                        <div class="carousel-dots"></div>
+                    </div>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="feature-showcase reverse">
+                    <div class="feature-text">
+                        <div class="feature-header">
+                            <div class="feature-number">2</div>
+                            <h3 data-translate="feature2Title">Share What Matters, When It Matters</h3>
+                        </div>
+                        <p data-translate="feature2Text">
+                            Care is teamwork. Instantly share your pet's up-to-date health info with vets, sitters, or family — securely, with one tap. Everyone stays informed and ready to help when your pet needs it most.
+                        </p>
+                    </div>
+                    <div class="feature-carousel">
+                        <div class="carousel-container">
+                            <div class="carousel-track">
+                                <img src="images/screenshot-sharing-1.png" alt="Share with caregivers" class="screenshot" loading="lazy">
+                                <img src="images/screenshot-sharing-2.png" alt="Permission settings" class="screenshot" loading="lazy">
+                            </div>
+                        </div>
+                        <button class="carousel-btn prev" onclick="moveCarousel(1, -1)" aria-label="Previous">‹</button>
+                        <button class="carousel-btn next" onclick="moveCarousel(1, 1)" aria-label="Next">›</button>
+                        <div class="carousel-dots"></div>
+                    </div>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="feature-showcase">
+                    <div class="feature-text">
+                        <div class="feature-header">
+                            <div class="feature-number">3</div>
+                            <h3 data-translate="feature3Title">Smarter Insights from Your Daily Care</h3>
+                        </div>
+                        <p data-translate="feature3Text">
+                            Your notes become meaningful. As you log symptoms, medications, or behaviors, SmartPetData learns from your entries and surfaces personalized AI health insights — spotting patterns you might miss.
+                        </p>
+                    </div>
+                    <div class="feature-carousel">
+                        <div class="carousel-container">
+                            <div class="carousel-track">
+                                <img src="images/screenshot-insights-1.png" alt="AI health insights" class="screenshot" loading="lazy">
+                                <img src="images/screenshot-insights-2.png" alt="Chat with AI assistant" class="screenshot" loading="lazy">
+                                <img src="images/screenshot-insights-3.png" alt="Health trends" class="screenshot" loading="lazy">
+                            </div>
+                        </div>
+                        <button class="carousel-btn prev" onclick="moveCarousel(2, -1)" aria-label="Previous">‹</button>
+                        <button class="carousel-btn next" onclick="moveCarousel(2, 1)" aria-label="Next">›</button>
+                        <div class="carousel-dots"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Privacy Note -->
+            <p class="privacy-note">
+                <svg class="lock-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path>
+                </svg>
+                <span data-translate="privacyNote">Your data stays private by default and is never shared without your permission.</span>
+            </p>
+        </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section class="final-cta">
+        <div class="container">
+            <h2 class="cta-headline" data-translate="ctaHeadline">Ready to simplify your pet's care?</h2>
+            <p class="cta-subheadline" data-translate="ctaSubheadline">
+                Join the SmartPetData waitlist and be the first to experience stress-free, organized, intelligent pet health.
+            </p>
+            <a href="https://forms.gle/yNYacXetnbGwsk7k7" target="_blank" rel="noopener noreferrer" class="cta-button-large" data-translate="ctaButtonLarge">
+                Join the Waitlist →
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p data-translate="footer">&copy; 2025 SmartPetData. Made with ❤️ for pet parents. 🐾</p>
+        </div>
+    </footer>
+
+    <!-- Translation Script -->
+    <script src="translations.js"></script>
+
+    <!-- Carousel Script -->
+    <script>
+        // Initialize carousels
+        const carousels = document.querySelectorAll('.feature-carousel');
+        const currentSlides = [0, 0, 0]; // Track current slide for each carousel
+
+        // Initialize dots for each carousel
+        carousels.forEach((carousel, carouselIndex) => {
+            const track = carousel.querySelector('.carousel-track');
+            const images = track.querySelectorAll('.screenshot');
+            const dotsContainer = carousel.querySelector('.carousel-dots');
+
+            // Create dots
+            images.forEach((_, index) => {
+                const dot = document.createElement('span');
+                dot.className = 'dot' + (index === 0 ? ' active' : '');
+                dot.onclick = () => goToSlide(carouselIndex, index);
+                dotsContainer.appendChild(dot);
+            });
+
+            // Hide buttons if only one image
+            if (images.length <= 1) {
+                carousel.querySelector('.prev').style.display = 'none';
+                carousel.querySelector('.next').style.display = 'none';
+            }
+        });
+
+        let lastInteraction = Date.now();
+
+        function moveCarousel(carouselIndex, direction) {
+            const carousel = carousels[carouselIndex];
+            const track = carousel.querySelector('.carousel-track');
+            const images = track.querySelectorAll('.screenshot');
+            const dots = carousel.querySelectorAll('.dot');
+
+            currentSlides[carouselIndex] += direction;
+
+            // Loop around
+            if (currentSlides[carouselIndex] < 0) {
+                currentSlides[carouselIndex] = images.length - 1;
+            } else if (currentSlides[carouselIndex] >= images.length) {
+                currentSlides[carouselIndex] = 0;
+            }
+
+            updateCarousel(carouselIndex);
+            lastInteraction = Date.now(); // Pause auto-play after manual interaction
+        }
+
+        function goToSlide(carouselIndex, slideIndex) {
+            currentSlides[carouselIndex] = slideIndex;
+            updateCarousel(carouselIndex);
+            lastInteraction = Date.now(); // Pause auto-play after manual interaction
+        }
+
+        function updateCarousel(carouselIndex) {
+            const carousel = carousels[carouselIndex];
+            const track = carousel.querySelector('.carousel-track');
+            const dots = carousel.querySelectorAll('.dot');
+
+            const offset = -currentSlides[carouselIndex] * 100;
+            track.style.transform = `translateX(${offset}%)`;
+
+            // Update dots
+            dots.forEach((dot, index) => {
+                dot.classList.toggle('active', index === currentSlides[carouselIndex]);
+            });
+        }
+
+        // Auto-advance carousel every 5 seconds, but pause for 10 seconds after user interaction
+        setInterval(() => {
+            const timeSinceInteraction = Date.now() - lastInteraction;
+            if (timeSinceInteraction > 10000) { // Only auto-advance if no interaction for 10 seconds
+                carousels.forEach((_, index) => {
+                    const images = carousels[index].querySelector('.carousel-track').querySelectorAll('.screenshot');
+                    if (images.length > 1) {
+                        moveCarousel(index, 1);
+                    }
+                });
+            }
+        }, 5000);
+    </script>
+</body>
+</html>
