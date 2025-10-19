@@ -86,6 +86,16 @@ function setLanguage(lang) {
     document.querySelectorAll('.lang-btn').forEach(btn => {
         btn.classList.toggle('active', btn.getAttribute('data-lang') === lang);
     });
+
+    // Update logo based on language
+    const logo = document.querySelector('.logo');
+    if (logo) {
+        if (lang === 'fr') {
+            logo.src = 'images/logo-fr.svg';
+        } else {
+            logo.src = 'images/logo.svg';
+        }
+    }
 }
 
 // Initialize language on page load
