@@ -89,6 +89,7 @@ body {
     position: relative;
     z-index: 2;
     text-align: left;
+    padding: 0 40px;
 }
 
 .container {
